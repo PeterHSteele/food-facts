@@ -1,0 +1,27 @@
+header{}
+
+body{
+	padding: 0 0 4em 0;
+}
+
+h1{
+	
+}
+
+h2{
+	border-width: 3px
+}
+
+.placeholder{
+	height:10em;
+	width:8em;
+}
+
+ul,dl{
+	list-style:none;
+}
+
+li{
+
+}
+
