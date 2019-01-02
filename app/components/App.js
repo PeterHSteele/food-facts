@@ -61,7 +61,7 @@ class App extends React.Component {
 	handleSubmitSearchForm(e,search){
 		e.preventDefault()
 		const that=this
-		let url="http://localhost:3000/search"
+		let url="http://sapphire-mile.glitch.me/search"
 		let options={
 			method:'POST',
 			headers:{'Content-Type': 'application/json',"Accept":"application/json"},
@@ -85,7 +85,7 @@ class App extends React.Component {
 	handleSubmitAddProductForm(e){
 		e.preventDefault()
 		const that=this
-		let url="http://localhost:3000/"
+		let url="https://sapphire-mile.glitch.me/"
 		let options={
 			method:'POST',
 			headers:{'Content-Type': 'application/json',"Accept":"application/json"},
@@ -114,7 +114,7 @@ class App extends React.Component {
 
 	fetchRandomDocument(){
 		const that=this;
-		fetch("http://localhost:3000")
+		fetch("http://sapphire-mile.glitch.me")
 		.then(function(response){
 			return response.json()
 		})
