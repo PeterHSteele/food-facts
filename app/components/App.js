@@ -61,7 +61,7 @@ class App extends React.Component {
 	handleSubmitSearchForm(e,search){
 		e.preventDefault()
 		const that=this
-		let url="http://sapphire-mile.glitch.me/search"
+		let url="https://sapphire-mile.glitch.me/search"
 		let options={
 			method:'POST',
 			headers:{'Content-Type': 'application/json',"Accept":"application/json"},
@@ -74,7 +74,7 @@ class App extends React.Component {
 				queryData:json
 			})	
 		})
-		.catch(function(err){console.log(err)})
+		.catch(function(err){res.send(err))})
 		this.setState({
 			searchTerm:this.state.keyword,
 			keyword:'',
@@ -114,7 +114,7 @@ class App extends React.Component {
 
 	fetchRandomDocument(){
 		const that=this;
-		fetch("http://sapphire-mile.glitch.me")
+		fetch("https://sapphire-mile.glitch.me")
 		.then(function(response){
 			return response.json()
 		})
@@ -124,6 +124,7 @@ class App extends React.Component {
 				displayProduct:json
 			})
 		})
+		.catch(function(err){res.send(err)})
 	}
 
 	componentDidMount(){
