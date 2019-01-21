@@ -74,7 +74,7 @@ class App extends React.Component {
 				queryData:json
 			})	
 		})
-		.catch(function(err){res.send(err))})
+		.catch(function(err){res.send(err)})
 		this.setState({
 			searchTerm:this.state.keyword,
 			keyword:'',
