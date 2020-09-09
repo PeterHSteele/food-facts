@@ -169,10 +169,7 @@ class App extends React.Component {
 		const addProductFormInputs=generateInputs(addProductFormProps.inputsArr,this.handleChange)
 
 		//About text for info box
-		const infoBoxText='Sometimes I\'m surprised to learn that one of my favorite grocery brands, one I had always envisioned as a small, independent, '+ 
-		'mom-and-pop style operation, is actually owned by Nestle or General Mills. The packaging depicts serene fields of neatly planted rows, '+
-		'too pristine to actually exist. So where did these items really come from? I decided '+
-		'to start this little database to collect some information about corporate ownership of brands I buy. I try to add one product each day.'
+		const infoBoxText='Where does your food actually come from? This little database tracks manufacturing locations.'
 		
 		//Generate nav links
 		const navLinks=['Home','Results'].map((e,i)=>{
